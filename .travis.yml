@@ -29,7 +29,7 @@ before_install:
 - sudo add-apt-repository -y ppa:webupd8team/java
 - sudo apt-get update -qq
 - echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
-- sudo apt-get install -qqy build-essential zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip ncftp curl zip oracle-java8-installer oracle-java8-set-default yasm maven
+- sudo apt-get install -qqy build-essential zlib1g-dev gcc-multilib g++-multilib libc6-dev-i386 lib32ncurses5-dev x11proto-core-dev libx11-dev lib32z-dev ccache libgl1-mesa-dev libxml2-utils xsltproc unzip ncftp curl zip oracle-java8-installer oracle-java8-set-default yasm maven > /dev/null 2>&1
 - sudo wget https://storage.googleapis.com/git-repo-downloads/repo -O/usr/bin/repo
 - sudo chmod +x /usr/bin/repo
 
