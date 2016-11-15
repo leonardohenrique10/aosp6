@@ -84,6 +84,7 @@ travis_jigger() {
     count=$(($count + 1))
     echo -ne "Still running ($count of $timeout): $@\r"
     sleep 60
+  done
 
   echo -e "\n${RED}Timeout (${timeout} minutes) reached. Terminating \"$@\"${RESET}\n"
   kill -9 $cmd_pid
