@@ -35,7 +35,7 @@ before_install:
 
 before_script:
 - echo "Downloading the code..."
-- bash .build/01-env.sh > /dev/null 2>&1
+- bash .build/01-env.sh
 
 script:
 - bash .build/02-build.sh

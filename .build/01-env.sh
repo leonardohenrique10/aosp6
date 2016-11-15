@@ -30,6 +30,6 @@ git config --global user.name "Travis CI"
 git config --global user.email "dgadelha@users.noreply.github.com"
 git config --global color.ui "true"
 
-repo init -u https://android.googlesource.com/platform/manifest -b android-6.0.1_r24
+repo init -u https://android.googlesource.com/platform/manifest -b android-6.0.1_r24 > /dev/null 2>&1
 mv -fv local_manifests .repo
-repo sync -c -j16
+travis_wait 45 repo sync -c -j16
