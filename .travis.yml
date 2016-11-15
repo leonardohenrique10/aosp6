@@ -34,7 +34,8 @@ before_install:
 - sudo chmod +x /usr/bin/repo
 
 before_script:
-- bash .build/01-env.sh
+- echo "Downloading the code..."
+- bash .build/01-env.sh > /dev/null 2>&1
 
 script:
 - bash .build/02-build.sh
